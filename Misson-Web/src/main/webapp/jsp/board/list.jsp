@@ -155,7 +155,9 @@ checked exception인데 왜 try catch 안쓰지? -> jsp 가 내부적으로는 s
 			 --%>
 		</table>
 		<br>
-		<button id="addBtn">새글등록</button>				
+		<c:if test="${not empty userVO }">
+			<button id="addBtn">새글등록</button>
+		</c:if>				
 	</div>
 	
 	
